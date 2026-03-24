@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | BIS Undergraduate & Aspiring IS Auditor</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Syne (display) + JetBrains Mono (code accent) + Outfit (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Lucide Icons (CDN) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-bracket">[</span>
+        YN
+        <span class="nav__logo-bracket">]</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#certifications" class="nav__link">Certs</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <!-- Animated grid background -->
+    <div class="hero__grid" aria-hidden="true"></div>
+    <!-- Floating glow orbs -->
+    <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+    <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="hero__pre-label">
+        <span class="hero__dot"></span> Available for Internships & Opportunities
+      </p>
+      <h1 class="hero__name">Your Name</h1>
+      <h2 class="hero__title">BIS Undergraduate <span class="hero__divider">/</span> Aspiring IS Auditor <span class="hero__amp">&amp;</span> Cybersecurity Analyst</h2>
+      <p class="hero__tagline">
+        Bridging the gap between <em>business systems</em> and <em>information security</em> — building a career grounded in audit, integrity, and resilience.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">
+          <i data-lucide="folder-open" class="btn__icon"></i>
+          View Projects
+        </a>
+        <a href="#" class="btn btn--outline" download>
+          <i data-lucide="download" class="btn__icon"></i>
+          Download CV
+        </a>
+      </div>
+      <!-- Terminal-style status bar -->
+      <div class="hero__terminal">
+        <span class="terminal__prompt">$</span>
+        <span class="terminal__text" id="terminalText"></span>
+        <span class="terminal__cursor">▋</span>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="hero__scroll" aria-label="Scroll down">
+      <i data-lucide="chevrons-down"></i>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__label">
+        <span class="label__line"></span>
+        <span class="label__text">01 / About</span>
+      </div>
+
+      <div class="about__grid">
+        <!-- Left: Text content -->
+        <div class="about__text">
+          <h2 class="section__heading">A Bit <br/><span class="accent">About Me</span></h2>
+          <p class="about__body">
+            I'm a final-year Business Information Systems undergraduate with a passion for understanding how technology and business intersect — and more importantly, how they can be secured. My studies have given me a solid foundation in systems analysis, data management, and enterprise processes.
+          </p>
+          <p class="about__body">
+            My career path is deliberate: I plan to enter the field as an <strong>IS Auditor</strong>, gaining deep expertise in compliance frameworks, risk assessment, and internal controls before expanding into <strong>Cybersecurity</strong>. I believe the best security professionals understand the business first.
+          </p>
+          <div class="about__highlights">
+            <div class="highlight">
+              <span class="highlight__value">3+</span>
+              <span class="highlight__label">Projects Built</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight__value">BIS</span>
+              <span class="highlight__label">Degree Focus</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight__value">2025</span>
+              <span class="highlight__label">Expected Grad.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Career path visual -->
+        <div class="about__path">
+          <h3 class="path__heading">Career Roadmap</h3>
+          <div class="path__timeline">
+            <div class="path__step path__step--active">
+              <div class="path__icon"><i data-lucide="graduation-cap"></i></div>
+              <div class="path__info">
+                <span class="path__stage">Now</span>
+                <span class="path__title">BIS Undergraduate</span>
+                <span class="path__desc">Systems, databases, accounting, IS fundamentals</span>
+              </div>
+            </div>
+            <div class="path__connector"></div>
+            <div class="path__step">
+              <div class="path__icon"><i data-lucide="clipboard-check"></i></div>
+              <div class="path__info">
+                <span class="path__stage">Next</span>
+                <span class="path__title">IS Auditor</span>
+                <span class="path__desc">CISA certification, risk frameworks, compliance</span>
+              </div>
+            </div>
+            <div class="path__connector"></div>
+            <div class="path__step">
+              <div class="path__icon"><i data-lucide="shield-check"></i></div>
+              <div class="path__info">
+                <span class="path__stage">Goal</span>
+                <span class="path__title">Cybersecurity Analyst</span>
+                <span class="path__desc">Security+, CCNA, threat detection & response</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__label">
+        <span class="label__line"></span>
+        <span class="label__text">02 / Skills</span>
+      </div>
+      <h2 class="section__heading">Technical <span class="accent">Arsenal</span></h2>
+
+      <div class="skills__grid">
+
+        <!-- Technical Skills -->
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <div class="skill-card__icon-wrap">
+              <i data-lucide="code-2"></i>
+            </div>
+            <h3 class="skill-card__title">Technical</h3>
+          </div>
+          <ul class="skill-card__list">
+            <li class="skill-item">
+              <span class="skill-item__name">C# / .NET</span>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" data-width="70%"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">SQL</span>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" data-width="75%"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">Networking Basics</span>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" data-width="55%"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">HTML / CSS</span>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" data-width="65%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Business Skills -->
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <div class="skill-card__icon-wrap">
+              <i data-lucide="briefcase"></i>
+            </div>
+            <h3 class="skill-card__title">Business</h3>
+          </div>
+          <ul class="skill-card__list">
+            <li class="skill-item">
+              <span class="skill-item__name">IS Audit Concepts</span>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" data-width="65%"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">Financial Accounting</span>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" data-width="70%"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">Risk Management</span>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" data-width="60%"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">Systems Analysis</span>
+              <div class="skill-item__bar">
+                <div class="skill-item__fill" data-width="72%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card">
+          <div class="skill-card__header">
+            <div class="skill-card__icon-wrap">
+              <i data-lucide="wrench"></i>
+            </div>
+            <h3 class="skill-card__title">Tools</h3>
+          </div>
+          <div class="tools__badges">
+            <span class="tool-badge"><i data-lucide="github" class="tool-badge__icon"></i> GitHub</span>
+            <span class="tool-badge"><i data-lucide="bar-chart-2" class="tool-badge__icon"></i> Tableau</span>
+            <span class="tool-badge"><i data-lucide="table-2" class="tool-badge__icon"></i> Excel</span>
+            <span class="tool-badge"><i data-lucide="database" class="tool-badge__icon"></i> SQL Server</span>
+            <span class="tool-badge"><i data-lucide="monitor" class="tool-badge__icon"></i> Visual Studio</span>
+            <span class="tool-badge"><i data-lucide="file-text" class="tool-badge__icon"></i> MS Office</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__label">
+        <span class="label__line"></span>
+        <span class="label__text">03 / Projects</span>
+      </div>
+      <h2 class="section__heading">Featured <span class="accent">Work</span></h2>
+
+      <div class="projects__grid">
+
+        <!-- Project 1: RidePulse -->
+        <article class="project-card" data-index="01">
+          <div class="project-card__header">
+            <div class="project-card__index">01</div>
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" aria-label="GitHub" target="_blank" rel="noopener">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="#" class="project-card__link" aria-label="External link" target="_blank" rel="noopener">
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__name">RidePulse System</h3>
+          <p class="project-card__desc">
+            A ride-sharing management platform designed to streamline driver-passenger coordination, fare calculation, and trip history tracking. Focused on clean data handling and user role separation.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">C#</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">.NET WinForms</span>
+            <span class="tag">OOP</span>
+          </div>
+          <a href="#" class="project-card__btn" target="_blank" rel="noopener">
+            <i data-lucide="github" class="btn__icon"></i> View on GitHub
+          </a>
+        </article>
+
+        <!-- Project 2: Library Management -->
+        <article class="project-card project-card--featured" data-index="02">
+          <div class="project-card__featured-badge">Featured</div>
+          <div class="project-card__header">
+            <div class="project-card__index">02</div>
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" aria-label="GitHub" target="_blank" rel="noopener">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="#" class="project-card__link" aria-label="External link" target="_blank" rel="noopener">
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__name">Library Management System</h3>
+          <p class="project-card__desc">
+            A full-featured desktop application for managing library inventory, member registrations, book loans, and overdue tracking. Built with a layered architecture separating UI, business logic, and data access.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">C#</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">ADO.NET</span>
+            <span class="tag">WinForms</span>
+          </div>
+          <a href="#" class="project-card__btn" target="_blank" rel="noopener">
+            <i data-lucide="github" class="btn__icon"></i> View on GitHub
+          </a>
+        </article>
+
+        <!-- Project 3: Clinic Management -->
+        <article class="project-card" data-index="03">
+          <div class="project-card__header">
+            <div class="project-card__index">03</div>
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" aria-label="GitHub" target="_blank" rel="noopener">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="#" class="project-card__link" aria-label="External link" target="_blank" rel="noopener">
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__name">Clinic Management System</h3>
+          <p class="project-card__desc">
+            A patient and appointment management solution for small clinics. Handles patient records, doctor scheduling, consultation notes, and billing — with a focus on data integrity and access control.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">C#</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">WinForms</span>
+            <span class="tag">Reports</span>
+          </div>
+          <a href="#" class="project-card__btn" target="_blank" rel="noopener">
+            <i data-lucide="github" class="btn__icon"></i> View on GitHub
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS SECTION ========== -->
+  <section class="section certifications" id="certifications">
+    <div class="container">
+      <div class="section__label">
+        <span class="label__line"></span>
+        <span class="label__text">04 / Certifications</span>
+      </div>
+      <h2 class="section__heading">Credentials <span class="accent">&amp; Learning</span></h2>
+
+      <div class="certs__grid">
+
+        <!-- Earned cert -->
+        <div class="cert-card cert-card--earned">
+          <div class="cert-card__badge">
+            <i data-lucide="award"></i>
+          </div>
+          <div class="cert-card__body">
+            <span class="cert-card__status cert-card__status--earned">Completed</span>
+            <h3 class="cert-card__name">Google Data Analytics Certificate</h3>
+            <p class="cert-card__issuer">Google / Coursera</p>
+            <p class="cert-card__desc">Foundations of data analysis, data cleaning, visualization, and SQL — applied to real-world business scenarios.</p>
+          </div>
+          <div class="cert-card__footer">
+            <a href="#" class="cert-card__link" target="_blank" rel="noopener">
+              View Credential <i data-lucide="arrow-right" class="cert-card__arrow"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Upcoming cert 1 -->
+        <div class="cert-card cert-card--upcoming">
+          <div class="cert-card__badge">
+            <i data-lucide="wifi"></i>
+          </div>
+          <div class="cert-card__body">
+            <span class="cert-card__status cert-card__status--upcoming">In Progress</span>
+            <h3 class="cert-card__name">Cisco CCNA</h3>
+            <p class="cert-card__issuer">Cisco</p>
+            <p class="cert-card__desc">Networking fundamentals, routing & switching, IP connectivity, and network security essentials.</p>
+          </div>
+          <div class="cert-card__footer">
+            <span class="cert-card__coming-soon">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- Upcoming cert 2 -->
+        <div class="cert-card cert-card--upcoming">
+          <div class="cert-card__badge">
+            <i data-lucide="shield"></i>
+          </div>
+          <div class="cert-card__body">
+            <span class="cert-card__status cert-card__status--upcoming">Planned</span>
+            <h3 class="cert-card__name">CompTIA Security+</h3>
+            <p class="cert-card__issuer">CompTIA</p>
+            <p class="cert-card__desc">Core cybersecurity skills covering threats, cryptography, network security, and risk management frameworks.</p>
+          </div>
+          <div class="cert-card__footer">
+            <span class="cert-card__coming-soon">Coming Soon</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__label">
+        <span class="label__line"></span>
+        <span class="label__text">05 / Contact</span>
+      </div>
+
+      <div class="contact__inner">
+        <div class="contact__left">
+          <h2 class="section__heading">Let's <span class="accent">Connect</span></h2>
+          <p class="contact__body">
+            Whether you have an internship opportunity, a project idea, or just want to talk about IS audit and cybersecurity — I'd love to hear from you.
+          </p>
+          <p class="contact__body">
+            I'm actively seeking <strong>internship positions</strong> and open to collaborations in the domains of information systems, audit, and security.
+          </p>
+        </div>
+
+        <div class="contact__links">
+          <a href="mailto:yourname@email.com" class="contact-link">
+            <div class="contact-link__icon">
+              <i data-lucide="mail"></i>
+            </div>
+            <div class="contact-link__text">
+              <span class="contact-link__label">Email</span>
+              <span class="contact-link__value">yourname@email.com</span>
+            </div>
+            <i data-lucide="arrow-right" class="contact-link__arrow"></i>
+          </a>
+
+          <a href="https://linkedin.com/in/yourname" class="contact-link" target="_blank" rel="noopener">
+            <div class="contact-link__icon">
+              <i data-lucide="linkedin"></i>
+            </div>
+            <div class="contact-link__text">
+              <span class="contact-link__label">LinkedIn</span>
+              <span class="contact-link__value">linkedin.com/in/yourname</span>
+            </div>
+            <i data-lucide="arrow-right" class="contact-link__arrow"></i>
+          </a>
+
+          <a href="https://github.com/yourname" class="contact-link" target="_blank" rel="noopener">
+            <div class="contact-link__icon">
+              <i data-lucide="github"></i>
+            </div>
+            <div class="contact-link__text">
+              <span class="contact-link__label">GitHub</span>
+              <span class="contact-link__value">github.com/yourname</span>
+            </div>
+            <i data-lucide="arrow-right" class="contact-link__arrow"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <span class="footer__logo">
+            <span class="nav__logo-bracket">[</span>YN<span class="nav__logo-bracket">]</span>
+          </span>
+          <span class="footer__copy">© 2025 Your Name. Built with care.</span>
+        </div>
+        <div class="footer__right">
+          <a href="https://github.com/yourname" class="footer__icon-link" aria-label="GitHub" target="_blank" rel="noopener">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="https://linkedin.com/in/yourname" class="footer__icon-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="mailto:yourname@email.com" class="footer__icon-link" aria-label="Email">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- Initialize Lucide icons -->
+  <script>lucide.createIcons();</script>
+</body>
+</html>
