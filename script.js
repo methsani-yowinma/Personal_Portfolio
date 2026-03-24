@@ -1,9 +1,3 @@
-/**
- * script.js — Portfolio Interactions
- * Covers: nav scroll, mobile menu, terminal typewriter,
- *         scroll-reveal, skill bar animation
- */
-
 /* ── DOM References ──────────────────────────────────────────── */
 const nav        = document.getElementById('nav');
 const navToggle  = document.getElementById('navToggle');

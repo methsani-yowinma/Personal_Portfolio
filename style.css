@@ -1,12 +1,5 @@
-/* ============================================================
-   PORTFOLIO — style.css
-   Theme: Dark Navy + Electric Cyan | Cybersecurity / IS Audit
-   Fonts: Syne (display) · Outfit (body) · JetBrains Mono (code)
-   ============================================================ */
-
 /* ── CSS Custom Properties ─────────────────────────────────── */
 :root {
-  /* Colors */
   --clr-bg:         #06090f;
   --clr-bg-2:       #0b1120;
   --clr-bg-card:    #0f1a2e;
